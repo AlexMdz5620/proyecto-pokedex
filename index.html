@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en es">
+<head>
+    <title>Pokédex</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./css/img/pngwing.com.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="module" src="./js/main.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <a href="https://www.pokemon.com/el" class="logo">
+            <img src="./css/img/logo.png" alt="Logo Pokédex">
+        </a>
+        <form>
+            <div class="form-grup">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-search">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+                <input type="search" placeholder="Buscar Pokémon" name="buscador" class="buscador">
+            </div>
+            <button class="btn-search">Buscar</button>
+        </form>
+    </header>
+
+    <div class="container-filter-btn">
+        <div class="icon-filter">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+            </svg>
+            <span>Filtrar</span>
+        </div>
+    </div>
+
+    <main>    
+        <div id="todos">
+            <div class="pokemon-todos" id="listaPokemon">
+        <!-- <div class="pokemon">
+                    <p class="pokemon-id-back">#025</p>
+                    <div class="pokemon-imagen">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
+                    </div>
+                    <div class="pokemon-info">
+                        <div class="nombre-contenedor">
+                            <p class="pokemon-id">#025</p>
+                            <h2 class="pokemon-nombre">Pikachu</h2>
+                        </div>
+                        <div class="pokemon-tipos">
+                            <p class="electric tipo">ELECTRIC</p>
+                            <p class="fighting tipo">FIGHTING</p>
+                        </div>
+                        <div class="pokemon-stats">
+                            <p class="stat">4m</p>
+                            <p class="stat">60kg</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <nav class="pagination" aria-label="...">
+            <ul class="pagination">
+              <li class="page-item" id="previous">
+                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+              </li>
+              <li class="page-item" id="next">
+                <a class="page-link" href="#">Siguiente</a>
+              </li>
+            </ul>
+        </nav>
+    </main>
+    
+    <div class="container-filter">
+        <div class="filter-by-type">
+            <nav class="nav">
+                <h1>Tipos</h1>
+                <ul class="nav-list">
+                    <li class="nav-item"><button class="btn-header" id="ver-todos">Ver todos</button></li> 
+                    <li class="nav-item"><button class="btn-header normal" id="normal">Normal</button></li>
+                    <li class="nav-item"><button class="btn-header fire" id="fire">Fire</button></li>
+                    <li class="nav-item"><button class="btn-header water" id="water">Water</button></li>
+                    <li class="nav-item"><button class="btn-header grass" id="grass">Grass</button></li>
+                    <li class="nav-item"><button class="btn-header electric" id="electric">Electric</button></li>
+                    <li class="nav-item"><button class="btn-header ice" id="ice">Ice</button></li>
+                    <li class="nav-item"><button class="btn-header fighting" id="fighting">Fighting</button></li>
+                    <li class="nav-item"><button class="btn-header poison" id="poison">Poison</button></li>
+                    <li class="nav-item"><button class="btn-header ground" id="ground">Ground</button></li>
+                    <li class="nav-item"><button class="btn-header flying" id="flying">Flying</button></li>
+                    <li class="nav-item"><button class="btn-header psychic" id="psychic">Psychic</button></li>
+                    <li class="nav-item"><button class="btn-header bug" id="bug">Bug</button></li>
+                    <li class="nav-item"><button class="btn-header rock" id="rock">Rock</button></li>
+                    <li class="nav-item"><button class="btn-header ghost" id="ghost">Ghost</button></li>
+                    <li class="nav-item"><button class="btn-header dark" id="dark">Dark</button></li>
+                    <li class="nav-item"><button class="btn-header dragon" id="dragon">Dragon</button></li>
+                    <li class="nav-item"><button class="btn-header steel" id="steel">Steel</button></li>
+                    <li class="nav-item"><button class="btn-header fairy" id="fairy">Fairy</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+</body>
+</html>
