@@ -18,7 +18,6 @@ export function mostrarPokemon(poke) {
     const cardContainer = document.createElement("div");
     cardContainer.classList.add("card-container");
     cardContainer.innerHTML = `
-        
             <div class="pokemon">
                 <p class="pokemon-id-back">#${pokeId}</p>
                 <div class="pokemon-imagen">
@@ -38,7 +37,6 @@ export function mostrarPokemon(poke) {
                     </div>
                 </div>
             </div>
-
     `;
 
     const cardBack = document.createElement("div");

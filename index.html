@@ -14,25 +14,24 @@
     <!-- Bootstrap -->
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
     
-    <header>
+    <header id="header">
         <a href="https://www.pokemon.com/el" class="logo">
             <img src="./css/img/logo.png" alt="Logo Pokédex">
         </a>
-        <form>
+        <form id="busqueda">
             <div class="form-grup">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="icon-search">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                 </svg>
-                <input type="search" placeholder="Buscar Pokémon" name="buscador" class="buscador">
+                <input id="input_nombre" type="search" placeholder="Buscar Pokémon" name="nombre" class="buscador">
+                <input type="submit" class="btn-search" value="Buscar">
             </div>
-            <button class="btn-search">Buscar</button>
+            <!-- <button class="btn-search">Buscar</button> -->
         </form>
     </header>
 
@@ -72,16 +71,6 @@
                 </div> -->
             </div>
         </div>
-        <nav class="pagination" aria-label="...">
-            <ul class="pagination">
-              <li class="page-item" id="previous">
-                <a class="page-link" href="#" tabindex="-1">Anterior</a>
-              </li>
-              <li class="page-item" id="next">
-                <a class="page-link" href="#">Siguiente</a>
-              </li>
-            </ul>
-        </nav>
     </main>
     
     <div class="container-filter">
@@ -112,7 +101,6 @@
             </nav>
         </div>
     </div>
-
 
 </body>
 </html>
