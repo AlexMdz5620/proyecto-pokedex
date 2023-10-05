@@ -208,6 +208,9 @@ main {
     transform-style: preserve-3d;
     border-radius: 1rem;
 }
+.flip-pokemon{
+    height: 325px;
+}
 .flip-pokemon:hover .card-container{
     box-shadow: 0 0 3rem rgba(0,0,0, .25);
     transform: rotateY(180deg);
@@ -216,7 +219,7 @@ main {
     transform: rotateY(180deg);
     position: absolute;
     top: 0%;
-  }
+}
 .stat-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
