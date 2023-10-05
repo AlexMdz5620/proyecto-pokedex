@@ -81,9 +81,6 @@ header form{
     letter-spacing: 2px;
     background-color: #fff;
 }
-.btn-search:hover{
-    background-color: #5555556f;
-}
 
 /* Btn Filter */
 .container-filter-btn{

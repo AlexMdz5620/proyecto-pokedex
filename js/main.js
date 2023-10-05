@@ -1,6 +1,5 @@
 import { URL } from "./config.js";
 import { mostrarPokemon } from "./pokeCard.js"
-import { buscarPokemon, pokemonEncontrado } from "./searchPoke.js";
 
 const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
